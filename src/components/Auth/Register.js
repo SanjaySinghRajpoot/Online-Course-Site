@@ -1,5 +1,8 @@
 import React from 'react';
 import {Grid,Form, Segment, Button, Header, Message, Icon} from 'semantic-ui-react';
+import {Link} from 'react-router-dom';
+
+
 
 class Register extends React.Component{
 
@@ -8,10 +11,10 @@ class Register extends React.Component{
 
     render(){
         return(
-            <Grid textAlign="center" verticalAlign="middle">
+            <Grid textAlign="center" verticalAlign="middle" className="app">
                 <Grid.Column style={{ maxWidth: 450 }}>
                     <Header as="h2" icon color="orange" textAlign="center">
-                        <icon name="puzzle piece" color="orange" />
+                        <icon name="text" color="orange" />
                                Register For NutChat
                     </Header>
                     <Form size="large">
@@ -28,10 +31,11 @@ class Register extends React.Component{
                              <Form.Input fluid="passwordConfirmation" icon="repeat" iconPosition="left"
                              placeholder="Password Confirmation" onChange = {this.handleChange} type="text"/>
 
-                             <Button color="orange" fluid size="large">Submit</Button>
+                             <Button color="orange" fluid size="large"> Submit </Button>
 
                         </Segment> 
                     </Form>
+                    <Message>Already a User ? <Link to="/login">Login</Link></Message>
                 </Grid.Column>
                  
             </Grid>
@@ -39,5 +43,5 @@ class Register extends React.Component{
     }
 }
 
-
+ 
 export default Register;
