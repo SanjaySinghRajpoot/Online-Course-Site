@@ -6,16 +6,27 @@ import {Link} from 'react-router-dom';
 
 class Register extends React.Component{
 
-    state = {}
-    handleChange=  () => {}
+    state = {
+        username: "",
+        email:"",
+        password:"",
+        passwordConfirmation: ""
+    }
 
+    handleChange =  event  => {
+        this.setState({ [event.target.name]: event.target.value});
+
+    };
+    
     render(){
+        const {username, email, password, passwordConfirmation} = this.state;
+    
         return(
             <Grid textAlign="center" verticalAlign="middle" className="app">
                 <Grid.Column style={{ maxWidth: 450 }}>
                     <Header as="h2" icon color="orange" textAlign="center">
                         <icon name="text" color="orange" />
-                               Register For NutChat
+                               Register For NutChat 
                     </Header>
                     <Form size="large">
                         <Segment stacked>
@@ -35,9 +46,8 @@ class Register extends React.Component{
 
                         </Segment> 
                     </Form>
-                    <Message>Already a User ? <Link to="/login">Login</Link></Message>
+                    <Message> Already a User ? <Link to="/login">Login</Link></Message>
                 </Grid.Column>
-                 
             </Grid>
         )
     }
