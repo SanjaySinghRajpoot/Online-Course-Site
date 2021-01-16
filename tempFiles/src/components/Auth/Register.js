@@ -43,7 +43,6 @@ class Register extends React.Component{
                              placeholder="Password Confirmation" onChange = {this.handleChange} type="text"/>
 
                              <Button color="orange" fluid size="large"> Submit </Button>
-
                         </Segment> 
                     </Form>
                     <Message> Already a User ? <Link to="/login">Login</Link></Message>
