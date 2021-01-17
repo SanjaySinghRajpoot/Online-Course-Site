@@ -4,6 +4,7 @@ import {Button} from "reactstrap";
 import {ToastContainer, toast} from 'react-toastify';
 import Home from './components/Home'
 import Courses from './components/course';
+import AllCourses from './components/allCouses';
 
 
 function App() {
@@ -16,10 +17,9 @@ function App() {
 
   return (
     <div>
-      <ToastContainer />
+        <ToastContainer />
         <Home />
-        <Courses Course={{title: "Java", description:"Basic Java Course"}}/>
-        <Courses Course={{title: "Python", description:"Basic Python Course"}}/>
+        <AllCourses />
     </div> 
   ); 
 }
