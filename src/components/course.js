@@ -11,7 +11,7 @@ import {
   CardText,
 } from "reactstrap";
 
-const courses = ({ course}) => {
+const courses = ({course}) => {
   return (
     <Card>
       <CardBody className= "text-center">

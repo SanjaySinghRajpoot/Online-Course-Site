@@ -12,7 +12,7 @@ const AllCourses = () => {
         <div>
             <h1> All Courses </h1>
             {
-                courses.length > 0 ? courses.map((item )=> <Course course={item} />) : "No Courses"
+              courses.length > 0 ? courses.map((item )=> <Course course={item} />) : "No Courses"
             }
         </div>
     );

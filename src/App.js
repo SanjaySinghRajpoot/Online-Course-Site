@@ -5,6 +5,7 @@ import {ToastContainer, toast} from 'react-toastify';
 import Home from './components/Home'
 import Courses from './components/course';
 import AllCourses from './components/allCouses';
+import AddCourse from './components/addCourse';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <ToastContainer />
         <Home />
         <AllCourses />
+        <AddCourse />
     </div> 
   ); 
 }

@@ -1,12 +1,49 @@
-import React from 'react';
-import { Form } from "reactstrap";
+import { Button } from 'reactstrap';
+import React, { Fragment } from "react";
+import { Container, Form, FormGroup, Input, Label } from "reactstrap";
 
-const addCourse = () => {
-    return(
-        <div>
-            <Form>
+const AddCourse = () => {
+  return (
+    <Fragment>
+      <h1 className="text-center my-3">Fill course Details</h1>
+      <Form>
+          <FormGroup>
+            <Label>Course ID</Label>
+            <Input
+              for="userId"
+              type="text"
+              placeholder="Enter Details"
+              name="userId"
+              id="userId"
+            />
+          </FormGroup>
+      </Form>
+        <FormGroup>
+          <label for="title">Course Title</label>
+          <Input
+            type="text"
+            placeholder="Enter the title here"
+            id="CourseTitle"
+          ></Input>
+        </FormGroup>
+        <FormGroup>
+          <Label for="exampleText">Course Description</Label>
+          <Input
+            type="textarea"
+            placeholder="Enter Description"
+            name="text"
+            id="desciption"
+            style={{ height: 150} }
+          ></Input>
+        </FormGroup>
 
-            </Form>
-        </div>
-    );
-}
+        <Container className="text-center">
+          <Button color="success">primary</Button>
+          <Button color="primary ml-3">Add Typre</Button>
+        </Container>   
+
+    </Fragment>
+  );
+};
+
+export default AddCourse;
