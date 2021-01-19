@@ -17,9 +17,8 @@ const AddCourse = () => {
               id="userId"
             />
           </FormGroup>
-      </Form>
         <FormGroup>
-          <label for="title">Course Title</label>
+          <label for="title" >Course Title</label>
           <Input
             type="text"
             placeholder="Enter the title here"
@@ -36,12 +35,11 @@ const AddCourse = () => {
             style={{ height: 150} }
           ></Input>
         </FormGroup>
-
         <Container className="text-center">
-          <Button color="success">primary</Button>
-          <Button color="primary ml-3">Add Typre</Button>
+          <Button color="success">Add Course</Button>
+          <Button color="primary ml-3"> Clear </Button>
         </Container>   
-
+      </Form>
     </Fragment>
   );
 };

@@ -1,9 +1,16 @@
 import React from "react";
+import { CardBody, Card } from "reactstrap";
 
 function Header({ name, title }) {
   return (
     <div>
-      <h1> Welcome to Courses App</h1>
+      <Card className="my-2" bg-color="warning">
+        <CardBody>
+        <h1 className="text-center" > Welcome to Courses App</h1>
+        </CardBody>
+      </Card>
     </div>
   );
 }
+
+export default Header;
