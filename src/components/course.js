@@ -1,13 +1,9 @@
 import React, {useEffect} from "react";
-import { ListGroup, ListGroupItem, Row} from "reactstrap";
-import {Link} from 'react-router-dom';
 
 import {
   Card,
   CardBody,
-  CardTitle,
   CardSubtitle,
-  CardFooter,
   Button,
   Container,
   CardText,
