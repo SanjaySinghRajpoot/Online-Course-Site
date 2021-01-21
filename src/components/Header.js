@@ -6,7 +6,7 @@ function Header({ name, title }) {
     <div>
       <Card className="my-2" bg-color="warning">
         <CardBody>
-        <h1 className="text-center" > Welcome to Courses App</h1>
+        <h1 className="text-center" > Welcome to Paper Bot</h1>
         </CardBody>
       </Card>
     </div>

@@ -1,16 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Course from './course';
 
 const AllCourses = () => {
+    useEffect(()=>{
+        document.title =  "PaperBot || NEET"
+      }, []);
+
     const [courses, setCourse ] = useState([
-        {title:"Java Course", description:"Basic Java Course"},
-        {title:"Python Course", description:"Basic Python Course"},
-        {title:"Angular Course", description:"Basic Angular Course"},
+        {title:" NEET Paper", description:"Basic Java Course"},
+        {title:"NEET Paper", description:"Basic Python Course"},
+        {title:"NEET Paper", description:"Basic Angular Course"},
     ]);
 
     return(
         <div>
-            <h1> All Courses </h1>
+            <h1> All NEET Papers </h1>
             {
               courses.length > 0 ? courses.map((item )=> <Course course={item} />) : "No Courses"
             }
