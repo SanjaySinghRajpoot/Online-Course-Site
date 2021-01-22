@@ -1,4 +1,5 @@
 import React, {useEffect} from "react";
+import { Link } from "react-router-dom";
 
 import {
   Card,
@@ -17,7 +18,8 @@ const courses = ({course}) => {
         <CardSubtitle className="font-weight-bold"> {course.title} </CardSubtitle>
         <CardText> {course.description} </CardText>
         <Container  className= "text-center">
-          <Button color="danger" > Download </Button>
+        <Link to ="/MST1_APR2C2_ETC_B_EI.pdf" target="_blank" download>Download</Link>    
+          {/* <Button color="danger" > Download </Button> */}
         </Container>
       </CardBody>
     </Card>

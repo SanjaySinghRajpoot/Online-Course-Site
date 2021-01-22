@@ -10,9 +10,9 @@ const AddCourse = () => {
   }, []);
 
   const [courses, setCourse ] = useState([
-    {title:" JEE Paper", description:"Basic Java Course"},
-    {title:"JEE Paper", description:"Basic Python Course"},
-    {title:"JEE Paper", description:"Basic Angular Course"},
+    {title:" JEE Paper", description:"2020 Papers"},
+    {title:"JEE Paper", description:"2019 Papers"},
+    {title:"JEE Paper", description:"2018 Papers"},
  ], []);
 
 
@@ -56,7 +56,7 @@ const AddCourse = () => {
     // </Fragment>
 
     <div>
-    <h1> All JEE Papers </h1>
+    <h2> All JEE Papers </h2>
     {
       courses.length > 0 ? courses.map((item )=> <Course course={item} />) : "No Courses"
     }

@@ -14,7 +14,7 @@ const AllCourses = () => {
 
     return(
         <div>
-            <h1> All NEET Papers </h1>
+            <h2> All NEET Papers </h2>
             {
               courses.length > 0 ? courses.map((item )=> <Course course={item} />) : "No Courses"
             }
