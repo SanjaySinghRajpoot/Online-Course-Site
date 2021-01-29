@@ -18,7 +18,7 @@ const courses = ({course}) => {
         <CardSubtitle className="font-weight-bold"> {course.title} </CardSubtitle>
         <CardText> {course.description} </CardText>
         <Container  className= "text-center">
-        <Link to ="/MST1_APR2C2_ETC_B_EI.pdf" target="_blank" download>Download</Link>    
+        <Link to = {course.link} target="_blank" download>Download</Link>    
           {/* <Button color="danger" > Download </Button> */}
         </Container>
       </CardBody>

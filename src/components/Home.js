@@ -4,7 +4,7 @@ import {Jumbotron, Component, Button, Container} from "reactstrap" ;
  const Home = () => {
 
         useEffect(()=>{
-          document.title =  "Home || CodeView"
+          document.title =  "Home || Paper Bot "
         }, []);
 
      return(

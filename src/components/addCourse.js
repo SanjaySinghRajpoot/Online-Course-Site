@@ -6,7 +6,7 @@ import Course from './course';
 
 const AddCourse = () => {
   useEffect(()=>{
-    document.title =  "Add Course || CodeView"
+    document.title =  "JEE || Paper Bot "
   }, []);
 
   const [courses, setCourse ] = useState([
